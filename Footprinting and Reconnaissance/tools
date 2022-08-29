@@ -1,0 +1,1 @@
+ping "IP_HOSTNAME" -f -l 1500  - combining -f option - dont fragment - with -l option help us to discover the MTU
