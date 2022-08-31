@@ -13,3 +13,7 @@ PROBE/PING
   Pn
   ICMP PE PP PM
   TCP PS PA 
+  
+  SCRIPT
+-A
+nmap --script smb-os-discovery.nse <target>
