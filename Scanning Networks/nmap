@@ -1,0 +1,15 @@
+SCAN
+  TCP
+  sT
+  sS
+  sA
+  sF
+  sX
+  sN
+  UDP
+  sU
+
+PROBE/PING
+  Pn
+  ICMP PE PP PM
+  TCP PS PA 
