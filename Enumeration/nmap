@@ -1,0 +1,1 @@
+nmap -sV -v --script nbstat.nse <target>
