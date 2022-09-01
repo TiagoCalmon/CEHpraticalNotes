@@ -1,0 +1,4 @@
+nbtstat -a target : show netbios information about target
+nbtsta  -c : show netbios information in netbios cache
+
+net use: view mounted shares
