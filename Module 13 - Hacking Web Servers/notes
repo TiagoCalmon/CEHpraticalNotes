@@ -1,6 +1,11 @@
 nc -vv www.example.com 80 
 telnet www.example.com 80 
+
 nmap -sV --script=http-enum www.example.com 
 nmap --script hostmap-bfk --script-args hostmap-bfk.prefix=hostmap- www.example.com
 nmap --script http-trace -d www.example.com
 nmap -p80 --script http-waf-detect www.example.com 
+
+uniscan -u http://www.example.com:8080/CEH -q 
+uniscan -u http://www.example.com:8080/CEH -we 
+uniscan -u http://www.example.com:8080/CEH -d 
