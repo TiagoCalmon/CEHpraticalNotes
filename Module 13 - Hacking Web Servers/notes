@@ -1,11 +1,27 @@
 nc -vv www.example.com 80 
 telnet www.example.com 80 
 
+[reconnaissance]
 nmap -sV --script=http-enum www.example.com 
 nmap --script hostmap-bfk --script-args hostmap-bfk.prefix=hostmap- www.example.com
 nmap --script http-trace -d www.example.com
-nmap -p80 --script http-waf-detect www.example.com 
+nmap -p80 --script http-waf-detect www.example.com
+nmap -T4 -A -v www.example.com  (-A is equivalent a -O -sV
 
+[reconnaissance]
 uniscan -u http://www.example.com:8080/CEH -q 
 uniscan -u http://www.example.com:8080/CEH -we 
 uniscan -u http://www.example.com:8080/CEH -d 
+reports is locate in /usr/share/uniscan/
+
+lbd yahoo.com (load balacing detector)
+
+[Attack]
+hydra - L /root/Wordlists/Usernames.txt -P /root/Wordlists/Passwords.txt ftp://10.10.10.10 "cracking ftp by bruteforce"
+
+[reconnaissance]
+whatweb www.moviescope.com 
+whatweb -v www.moviescope.com 
+whatweb --log-verbose=MovieScope_Report www.moviescope.com 
+
+gobuster dir -u http://www.moviescope.com -w /root/Desktop/common.txt (directories discovering)
