@@ -1,0 +1,3 @@
+nc -vv www.example.com 80 
+telnet www.example.com 80 
+nmap -sV --script=http-enum www.example.com 
