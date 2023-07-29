@@ -1,0 +1,6 @@
+nmap -sP x.x.x.1/24    "discovering hosts"              
+nmap -sn x.x.x.1/24  "discovering hosts"
+
+nmap -p port x.x.x.1/24 --open ""discovering hosts with service listenig to port "
+
+nmap -O x.x.x.x "find OS"
