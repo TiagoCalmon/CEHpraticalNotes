@@ -1,6 +1,14 @@
-nmap -sP x.x.x.1/24    "discovering hosts"              
-nmap -sn x.x.x.1/24  "discovering hosts"
+"discovering hosts"  
+Linux
+  nmap -sP x.x.x.1/24    "discovering hosts"              
+  nmap -sn x.x.x.1/24  "discovering hosts"
 
-nmap -p port x.x.x.1/24 --open ""discovering hosts with service listenig to port "
+  nmap -p port x.x.x.1/24 --open ""discovering hosts with service listenig to port "
 
-nmap -O x.x.x.x "find OS"
+  nmap -O x.x.x.x "find OS"
+
+  netdiscover -i eth0
+  netdiscover -r x.x.x.1/24
+Windows
+
+  Advanced IP Scanner
