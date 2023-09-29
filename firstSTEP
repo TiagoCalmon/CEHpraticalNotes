@@ -6,6 +6,9 @@ Linux
   nmap -p port x.x.x.1/24 --open ""discovering hosts with service listenig to port "
 
   nmap -O x.x.x.x "find OS"
+  nmap -sn x.x.x.x/24 -oN nmap.txt
+  nmap -O x.x.x.x/24 -oN namp-OS.txt
+  namp -sC -sV -sS x.x.x.x -oN namp-all.txt
 
   netdiscover -i eth0
   netdiscover -r x.x.x.1/24
